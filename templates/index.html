@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model Deployment</title>
+</head>
+<body>
+    <h1>Stock Price Prediction</h1>
+    <form action="/predict" method = "POST" style ="text-align: center;">
+        <label>Enter Close Price</label>
+        <input type ="text" name = "Close" style = "margin: 0 auto;">
+        <label>Enter Volume</label>
+        <input type ="text" name = "Volume" style = "margin: 0 auto;">
+        <label>Enter Open Price</label>
+        <input type="text" name = "Open" style = "margin: 0 auto;">
+        <label>Enter High Price</lable>
+        <input type ="text" name = "High" style = "margin: 0 auto;">
+        <label>Enter Low Price</label>
+        <input type ="text" name = "Low" style = "margin: 0 auto;">
+        <label>Enter New Close Price</label>
+        <input type ="text" name = "New_close" style = "margin: 0 auto;">
+        <button type="submit">Predict</button>
+            
+    </form>
+
+</body>
+</html>
